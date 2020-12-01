@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Datas Brasil aqui você encontra tudo sobre feriados e datas comemorativas do Brasil, semanas, meses e ano tudo em um só lugar.">
+    <title>DB - Datas Brasil</title>
+    <link rel="shortcut icon" href="_img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="_css/style.css">
+</head>
+<body>
+    <header>
+            <a href="#"><img src="_img/logo.png" alt="logo datas Brasil"></a>
+        <nav id="menu">
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu">&#9776;</label>
+            <ul id="menu-top">
+                <li>
+                    <a href="index.html">Início</a>
+                    <a href="meses.html">Meses</a>
+                    <a href="estados.html">Estados</a>
+                    <a href="sobre.html">Sobre</a>
+                </li>
+            </ul>
+            <ul id="menu-lateral">
+                <li>
+                    <a href="index.html">Início</a>
+                    <a href="meses.html">Meses</a>
+                    <a href="estados.html">Estados</a>
+                    <a href="sobre.html">Sobre</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="busca">
+            <input type="text" name="busca" id="buscar" placeholder="  Buscar data ou nome...">
+            <input type="button" value="" id="btn-buscar">
+        </div>
+    </header>
+    <section id="meses-lateral">
+        <ul id="barrames">
+            <li>
+                <a href="janeiro.html">1<span>Janeiro</span></a>
+                <a href="fevereiro.html">2<span>Fevereiro</span></a>
+                <a href="marco.html">3<span>Março</span></a>
+                <a href="abril.html">4<span>Abril</span></a>
+                <a href="maio.html">5<span>Maio</span></a>
+                <a href="junho.html">6<span>Junho</span></a>
+                <a href="julho.html">7<span>Julho</span></a>
+                <a href="agosto.html">8<span>Agosto</span></a>
+                <a href="setembro.html">9<span>Setembro</span></a>
+                <a href="outubro.html">10<span>Outubro</span></a>
+                <a href="novembro.html">11<span>Novembro</span></a>
+                <a href="dezembro.html">12<span>Dezembro</span></a>
+                <a href="contato.html">C<span>Contato</span></a>
+            </li>
+        </ul>
+    </section>
+    <section class="adtopdatela"></section>
+    <main>
+        <div id="infododia">
+            <h1>Seja Bem-Vindo ao <span id="nomeDB">Datas Brasil</span> Hoje é:</h1>
+            <span id="datainfododia">99/99/9999</span>
+            <p id="infododiap"><b>“Houston, temos um problema” ;)</b> mas você ainda pode procurar a data desejada nos botões de meses ao lado ou digita-la no procurar data.</p>
+            <a id="btn-feriado"href="#"><b>Feriado</b></a><a id="btn-comemoracao"href="#"><b>Comemorativo</b></a><a id="btn-estado"href="estados.html"><b>Estados</b></a>
+        </div>
+        <div id="calendario">
+            <p class="titulo">Procurar Data: Nacional</p>
+            <input type="number" name="Dia" id="pegardia" list="listdia" min="1" max="31" minlength="1" maxlength="2" placeholder="Dia">
+            <datalist id="listdia">
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+                <option value="6"></option>
+                <option value="7"></option>
+                <option value="8"></option>
+                <option value="9"></option>
+                <option value="10"></option>
+                <option value="11"></option>
+                <option value="12"></option>
+                <option value="13"></option>
+                <option value="14"></option>
+                <option value="15"></option>
+                <option value="16"></option>
+                <option value="17"></option>
+                <option value="18"></option>
+                <option value="19"></option>
+                <option value="20"></option>
+                <option value="21"></option>
+                <option value="22"></option>
+                <option value="23"></option>
+                <option value="24"></option>
+                <option value="25"></option>
+                <option value="26"></option>
+                <option value="27"></option>
+                <option value="28"></option>
+                <option value="29"></option>
+                <option value="30"></option>
+                <option value="31"></option>
+            </datalist>
+            <input type="number" name="mes" id="pegarmes" list="listmes" min="01" max="12" minlength="2" maxlength="2" placeholder="Mês">
+            <datalist id="listmes">
+                <option value="01"></option>
+                <option value="02"></option>
+                <option value="03"></option>
+                <option value="04"></option>
+                <option value="05"></option>
+                <option value="06"></option>
+                <option value="07"></option>
+                <option value="08"></option>
+                <option value="09"></option>
+                <option value="10"></option>
+                <option value="11"></option>
+                <option value="12"></option>
+            </datalist>
+            <input type="button"  value="Procurar" id="btn-pegardatas" onclick="pegardatas()">
+            <p id="calendariop">Digite apenas o necessário para fazer a pesquisa.</p>
+        </div>
+        <div class="breakline"></div> <!-- para quebrar linhas no flexbox-->
+        <section id="cont-resultados">
+            <div class="resultados">
+                <h2 id="hparaferiado">Feriado:</h2>
+                <p id="pparaferiado"> <b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados ao nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.</p>
+                <a id="btn-resultadoferiado" href="#">Saiba Mais Aqui</a>
+                <h3 id="hparacomemorativa">Data Comemorativa:</h3>
+                <p id="pparacomemorativa"> <b>O que é uma data comemorativa?</b> Datas comemorativas são datas escolhidas para relembrar eventos históricos, conquistas importantes ou lutas que ainda estão sendo travadas por um grupo. Muitas delas possuem alcance internacional enquanto outras podem ser especificas para um país ou região.</p>
+                <a id="btn-resultadocomemorativa" href="#">Saiba Mais Aqui</a>
+            </div>
+        </section>
+    </main>
+    <section class="adbaixooumeio"></section>
+    <div id="addireitaquadrado"></div>
+    <section id="pre-footer"></section>
+    <div class="box-cookies hide">
+        <p class="msg-cookies">Este site usa cookies para garantir que você obtenha a melhor experiência, continuar significa que você concorda com <a href="https://policies.google.com/technologies/cookies?hl=pt-BR">Privacidade & Termos</a>.</p>
+        <button class="btn-cookies">Aceitar!</button>
+     </div>
+    <footer id="footer">&copy; 2k?? - Todos os Direitos Reservados.</footer>
+</body>
+<script>
+    alert('Todos os feriados já foram adicionados e em breve adicionaremos as comemorações.')
+</script>
+<script src="_js/cookies.js"></script>
+<script src="_js/script.js"></script>
+<script src="_js/pegardatas.js"></script>
+</html>
