@@ -22,7 +22,7 @@ ul{
 }
 /* Fim div para quebrar linhas dentro de uma flexbox*/
 
-                          /* para dispositiveis com tela de 280px de width */
+                          /* para dispositiveis com tela de 320px de width */
 @media (min-width: 280px) {
     /* --------    header -------- */
 
@@ -132,7 +132,7 @@ ul{
         margin-top: 5px;
         border-radius: 5px;
         float: right;
-        background-image: url(../_img/buscar_icon.png);
+        background-image: url(../img/buscar_icon.png);
         background-repeat: no-repeat;
         background-size: 28px 28px;
         cursor: pointer;
@@ -193,7 +193,6 @@ ul{
     /* -------- AD do top no centro da tela -------- */
     section.adtopdatela {
         width: auto;
-        max-width: 730px;
         min-height: 40px;
         height: auto;
         background-color: rgba(5, 73, 5, .6);
@@ -249,88 +248,30 @@ ul{
         border-radius: 10px;
     }
 
-    main section h1,h2,h3,h4 {
+    main section h1,h2 {
         color: rgb(185, 185, 3);
-        background-color: rgba(2, 46, 2, .9);
         text-shadow: 2px 2px 2px black;
         text-align: center;
-        border-radius: 5px;
-    }
-
-    .subtitulo {
-        font-size: 15pt;
-        text-align: justify;
-        margin: 5px 5px;
-        background-color: rgb(2, 46, 2);
-        border-radius: 5px;
-        text-indent: 7px;
-        padding: 1px 5px;
+        margin: 4px auto;
     }
 
     main section p {
-        font-size: 15pt;
+        margin: 3px 5px;
         text-align: justify;
-        margin: 5px 5px;
-        background-color: rgb(2, 46, 2);
-        border-radius: 5px;
-        text-indent: 7px;
-        padding: 1px 5px;
     }
-
-    main section a {
+    p.titulo {
+        font-size: 16pt;
         color: rgb(185, 185, 3);
-    }
-
-    main section p span {
-        font-size: 13pt;
-        color: rgb(185, 185, 3);
-    }
-
-    main section div.imgs {
+        text-shadow: 2px 2px 2px black;
         text-align: center;
-        width: auto;
-        height: auto;
-        margin-top: 5px;
-        margin-bottom: 7px;
+        margin: 7px auto;
     }
 
-    main section div.imgs img {
-        width: auto;
-        height: auto;
-        border-radius: 10px;
-    }
-
-    main section div.imgs a {
-        display: block;
-    }
-
-    main section#vejatbm {
-        display: block;
-        width: 200px;
-        min-height: 80px;
-        margin-top: 5px;
-        background-color: rgba(5, 73, 5, .0);
-        border-radius: 10px;
-    }
-
-    main section#vejatbm a {
-        display: block;
-        font-size: 15pt;
+    ul.lista-estados {
         text-align: center;
-        background-color: rgb(7, 46, 7);
-        border-radius: 7px;
-        margin: 5px auto;
-        padding-top: 4px;
-        padding-bottom: 4px;
+        margin-bottom: 5px;
     }
 
-    main section#vejatbm p {
-        color: black;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 18pt;
-        text-align: center;
-        background-color: rgba(5, 73, 5, .0);
-    }
     /* Fim main */
     /* -------- section pre-footer -------- */
 
@@ -408,7 +349,7 @@ ul{
 
 }
                           
-/* Fim para dispositiveis com 280px de width*/
+/* Fim para dispositiveis com 320px de width*/
 
 /* para dispositiveis com 360px de width*/
 @media (min-width: 360px) {
@@ -448,9 +389,7 @@ ul{
         main section {
             width: 280px;
         }
-        main section#vejatbm {
-            width: 280px;
-        }
+    
 }
 
 
@@ -512,9 +451,6 @@ ul{
     main section {
         width: 380px;
     }
-    main section#vejatbm {
-        width: 380px;
-    }
 }
 /* Fim para dispositiveis com 540px de width*/
 
@@ -571,10 +507,6 @@ ul{
     main section {
         width: 500px;
     }
-    main section#vejatbm {
-        position: relative;
-        width: 500px;
-    }
 }
 
 
@@ -610,12 +542,6 @@ ul{
     /*  ----- fim menu top -----*/
     main {
         float: none;
-    }
-    main section#vejatbm {
-        width: 85%;
-    }
-    main section#vejatbm a {
-        width: 500px;
     }
 }
     
@@ -750,7 +676,7 @@ div#busca {
     margin-top: 5px;
     border-radius: 5px;
     float: right;
-    background-image: url(../_img/buscar_icon.png);
+    background-image: url(../img/buscar_icon.png);
     background-repeat: no-repeat;
     background-size: 28px 28px;
     cursor: pointer;

@@ -132,7 +132,7 @@ ul{
         margin-top: 5px;
         border-radius: 5px;
         float: right;
-        background-image: url(../_img/buscar_icon.png);
+        background-image: url(../img/buscar_icon.png);
         background-repeat: no-repeat;
         background-size: 28px 28px;
         cursor: pointer;
@@ -207,6 +207,7 @@ ul{
     /* -------- AD de baixo ou meio  da tela -------- */
     section.adbaixooumeio {
         width: 99%;
+        max-width: 730px;
         min-height: 40px;
         height: auto;
         background-color: rgba(5, 73, 5, .6);
@@ -240,58 +241,228 @@ ul{
         justify-content: center;
     }
 
-    main section {
-        width: 200px;
-        min-height: 620px;
+    /* -------- Div Informações do dia -------- */
+    #infododia {
+        width: 240px;
         height: auto;
         background-color: rgb(5, 73, 5);
+        border: 1px solid rgb(7, 46, 7);
+        border-radius: 20px;
+        margin: 7px 1px;
+    }
+
+    #infododia h1 {
+        font-size: 18pt;
+        color: rgb(185, 185, 3);
+        text-align: center;
+        text-shadow: 3px 3px rgb(7, 46, 7);
+    }
+    #infododia h1 span#nomeDB {
+        font-size: 22pt;
+        font-style: italic;
+        text-shadow: 3px 3px rgb(7, 46, 7);
+    }
+    #infododia span#datainfododia {
+        color: rgb(185, 185, 3);
+        font-size: 30pt;
+        font-style: normal;
+        text-shadow: 3px 3px 3px black;
+        margin-left: 25px;
+        padding: 2px 10px;
+        background-color: rgb(2, 46, 2);
+        border-radius: 20px;
+    }
+    #infododia p#infododiap {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+        margin: 4px 8px;
+    }
+    #infododia a#btn-feriado {
+        color: rgb(185, 185, 3);
+        width: 100px;
+        height: 30px;
+        margin: 1px 36px;
+        padding-top: 5px;
+        text-align: center;
+        display: none;
+        justify-content: space-around;
+        background-color: rgb(7, 46, 7);
+        border: rgb(5, 105, 5);
+        border-radius: 10px;
+    }
+    #infododia a#btn-comemoracao {
+        color: rgb(185, 185, 3);
+        width: 100px;
+        height: 30px;
+        margin: 1px 36px;
+        padding-top: 5px;
+        text-align: center;
+        display: none;
+        justify-content: space-around;
+        background-color: rgb(7, 46, 7);
+        border: rgb(5, 105, 5);
+        border-radius: 10px;
+    }
+    #infododia a#btn-estado {
+        color: rgb(185, 185, 3);
+        width: 100px;
+        height: 30px;
+        margin: 1px 36px;
+        padding-top: 5px;
+        text-align: center;
+        display: none;
+        justify-content: space-around;
+        background-color: rgb(7, 46, 7);
+        border: rgb(5, 105, 5);
         border-radius: 10px;
     }
 
-    main section h1,h2,h3,h4 {
+    /* -------- Fim Div Informações do dia -------- */
+
+    /* -------- Div do Calendario -------- */
+    #calendario {
+        width: 240px;
+        height: auto;
+        background-color: rgb(5, 73, 5);
+        border: 1px solid rgb(7, 46, 7);
+        border-radius: 20px;
+        margin: 7px 1px;
+    }
+    #calendario p.titulo {
+        font-size: 17pt;
         color: rgb(185, 185, 3);
-        background-color: rgba(2, 46, 2, .9);
-        text-shadow: 2px 2px 2px black;
         text-align: center;
-        border-radius: 5px;
+        text-shadow: 3px 3px rgb(7, 46, 7);
+        margin: 3px auto;
     }
-
-    .subtitulo {
-        font-size: 15pt;
-        text-align: justify;
+    #calendario #pegardia {
+        width: 60px;
+        height: 45px;
+        font-size: 12pt;
         margin: 5px 5px;
-        background-color: rgb(2, 46, 2);
+        justify-content: space-around;
+        display: inline-block;
         border-radius: 5px;
-        text-indent: 7px;
-        padding: 1px 5px;
     }
-
-    main section p {
-        font-size: 15pt;
-        text-align: justify;
+    #calendario #pegarmes {
+        width: 60px;
+        height: 45px;
+        font-size: 12pt;
         margin: 5px 5px;
-        background-color: rgb(2, 46, 2);
+        justify-content: space-around;
+        display: inline-block;
         border-radius: 5px;
-        text-indent: 7px;
-        padding: 1px 5px;
+    }
+    #calendario #btn-pegardatas {
+        width: 70px;
+        height: 45px;
+        font-size: 12pt;
+        margin: 5px 5px;
+        justify-content: space-around;
+        display: inline-block;
+        border-radius: 10px;
     }
 
-    main section a {
+    #calendario p#calendariopred {
+        color: red;
+        text-align: justify;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .9);
+        margin: 4px 8px;
+    }
+
+    #calendario p#calendariop {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+        margin: 4px 8px;
+    }
+
+    #calendario p#calendariop a {
         color: rgb(185, 185, 3);
     }
 
-    main section p span {
-        font-size: 13pt;
-        color: rgb(185, 185, 3);
+
+    /* -------- Fim Div do Calendario -------- */
+
+    /* -------- section cont-resultados -------- */
+    section#cont-resultados {
+        width: 100%;
+        height: auto;
+        margin: 1px auto;
+        margin-bottom: 7px;
+        justify-self: auto;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
     }
 
+    /* -------- div da class resultados -------- */
+    .resultados {
+        width: 240px;
+        height: auto;
+        background-color: rgb(5, 73, 5);
+        margin: 2px auto;
+        border: 1px solid rgb(7, 46, 7);
+        border-radius: 15px;
+        padding: 6px 0px;
+    }
 
-    /* Fim main */
+    #cont-resultados #hparaferiado {
+        font-size: 19pt;
+        color: rgb(185, 185, 3);
+        text-align: center;
+        text-shadow: 3px 3px rgb(7, 46, 7);
+    }
+    #cont-resultados #pparaferiado {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+        margin: 6px 8px;
+        margin-bottom: 5px;
+    }
+    #cont-resultados a#btn-resultadoferiado {
+        color: rgb(185, 185, 3);
+        width: 200px;
+        height: 30px;
+        margin: 3px auto;
+        padding-top: 5px;
+        text-align: center;
+        display: none;
+        background-color: rgb(7, 46, 7);
+        border: rgb(5, 105, 5);
+        border-radius: 10px;
+    }
+
+    #cont-resultados #hparacomemorativa {
+        font-size: 19pt;
+        color: rgb(185, 185, 3);
+        text-align: center;
+        text-shadow: 3px 3px rgb(7, 46, 7);
+    }
+    #cont-resultados #pparacomemorativa {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+        margin: 6px 8px;
+    }
+    #cont-resultados a#btn-resultadocomemorativa {
+        color: rgb(185, 185, 3);
+        width: 200px;
+        height: 30px;
+        margin: 3px auto;
+        padding-top: 5px;
+        text-align: center;
+        display: none;
+        background-color: rgb(7, 46, 7);
+        border: rgb(5, 105, 5);
+        border-radius: 10px;
+    }
+
+    /* -------- Fim div da class resultados -------- */
+
     /* -------- section pre-footer -------- */
 
     section#pre-footer {
             background-color: rgba(188, 212, 188, .3);
-            width: 95%;
+            width: 85%;
+            max-width: 730px;
             height: 50px;
             margin: 3px auto;
             display: flex;
@@ -302,6 +473,22 @@ ul{
     }
     /* -------- Fim section pre-footer -------- */
 
+    /* -------- footer -------- */
+    footer {
+        width: 100%;
+        max-width: 730px;
+        min-height: 25px;
+        height: auto;
+        margin: 3px auto;
+        padding-top: 2px;
+        color: rgb(7, 46, 7);
+        text-align: center;
+        text-shadow: 1px 1px 1px;
+        background-color: rgb(185, 185, 3);
+        border-radius: 10px;
+        position: relative;
+        bottom: 0px;
+    }
     /*  div cookies*/
     .box-cookies.hide {
         display: none !important;
@@ -332,35 +519,19 @@ ul{
         align-self: normal;
       }
       
+            
       .box-cookies a {
         color: rgb(185, 185, 3);
       }
-
-
+      
+      
       @media screen and (max-width: 600px) {
         .box-cookies {
           flex-direction: column;
         }
       }
-     /* Fim div cookies*/
-
-    /* -------- footer -------- */
-    footer {
-        width: 100%;
-        max-width: 730px;
-        min-height: 25px;
-        height: auto;
-        margin: 3px auto;
-        padding-top: 2px;
-        color: rgb(7, 46, 7);
-        text-align: center;
-        text-shadow: 1px 1px 1px;
-        background-color: rgb(185, 185, 3);
-        border-radius: 10px;
-        position: relative;
-        bottom: 0px;
-    }
-
+      /* Fim div cookies*/
+      
 }
                           
 /* Fim para dispositiveis com 280px de width*/
@@ -400,9 +571,78 @@ ul{
         main {
             width: 88%;
         }
-        main section {
+    
+        /* -------- Div Informações do dia -------- */
+        #infododia {
             width: 280px;
         }
+    
+        #infododia h1 {
+            font-size: 19pt;
+        }
+        #infododia h1 span#nomeDB {
+            font-size: 23pt;
+        }
+        #infododia span#datainfododia {
+            font-size: 35pt;
+            margin-left: 35px;
+            padding: 2px 10px;
+
+        }
+    
+        /* -------- Fim Div Informações do dia -------- */
+    
+        /* -------- Div do Calendario -------- */
+        #calendario {
+            width: 280px;
+        }
+        #calendario p.titulo {
+            font-size: 17pt;
+        }
+        #calendario #pegardia {
+            width: 70px;
+            height: 45px;
+            font-size: 14pt;
+            margin: 5px 8px;
+        }
+        #calendario #pegarmes {
+            width: 70px;
+            height: 45px;
+            font-size: 14pt;
+            margin: 5px 8px;
+        }
+        #calendario #btn-pegardatas {
+            width: 80px;
+            height: 45px;
+            font-size: 14pt;
+            margin: 5px 5px;
+        }
+    
+    
+        /* -------- Fim Div do Calendario -------- */
+    
+        /* -------- section cont-resultados -------- */
+        section#cont-resultados {
+            width: 99%;
+            height: auto;
+            margin: 1px auto;
+            margin-bottom: 7px;
+            justify-self: auto;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        /* -------- div da class resultados -------- */
+        .resultados {
+            width: 280px;
+        }
+    
+        #cont-resultados #hparaferiado {
+            font-size: 19pt;
+        }
+    
+        /* -------- Fim div da class resultados -------- */
     
 }
 
@@ -418,8 +658,6 @@ ul{
     #btn-menu:checked ~ #menu-lateral {
         margin-left: 97px;
     }
-
-
 }
 
 /* Fim para dispositiveis com 375px de width*/
@@ -436,6 +674,39 @@ ul{
     header a img {
         display: block;
         left: 70px;
+        }
+    #infododia {
+    width: 320px;
+    }
+    #infododia h1 {
+    font-size: 24pt;
+    }
+    #infododia h1 span#nomeDB {
+        font-size: 28pt;
+    }
+    #infododia span#datainfododia {
+        margin-left: 44px;
+        padding: 2px 10px;
+    }
+
+    #calendario {
+        width: 320px;
+    }
+    #calendario p.titulo {
+        font-size: 19pt;
+    }
+    #calendario #pegardia {
+        margin: 5px 14px;
+    }
+    #calendario #pegarmes {
+        margin: 5px 14px;
+    }
+    #calendario #btn-pegardatas {
+        margin: 5px 10px;
+    }
+
+    .resultados {
+        width: 320px;
     }
 
 
@@ -456,15 +727,45 @@ ul{
     header a img {
         display: block;
         left: 80px;
+        }
+    #infododia {
+    width: 380px;
+    }
+    #infododia h1 {
+    font-size: 27pt;
+    }
+    #infododia h1 span#nomeDB {
+        font-size: 32pt;
+    }
+    #infododia span#datainfododia {
+        margin-left: 71px;
+        padding: 2px 10px;
+    }
+
+    #calendario {
+        width: 380px;
+    }
+    #calendario p.titulo {
+        font-size: 19pt;
+    }
+    #calendario #pegardia {
+        margin: 5px 25px;
+    }
+    #calendario #pegarmes {
+        margin: 5px 25px;
+    }
+    #calendario #btn-pegardatas {
+        margin: 5px 15px;
+    }
+
+    .resultados {
+        width: 380px;
     }
     #footer {
         position: relative;
         bottom: 0px;
     }
 
-    main section {
-        width: 380px;
-    }
 }
 /* Fim para dispositiveis com 540px de width*/
 
@@ -488,38 +789,47 @@ ul{
     main {
         width: 93%;
     }
+        #infododia {
+    width: 340px;
+    }
+    #infododia h1 {
+    font-size: 25pt;
+    }
+    #infododia h1 span#nomeDB {
+        font-size: 30pt;
+    }
+    #infododia span#datainfododia {
+        margin-left: 53px;
+        padding: 2px 10px;
+    }
+
+    #calendario {
+        width: 340px;
+    }
+    #calendario #pegardia {
+        margin: 5px 20px;
+    }
+    #calendario #pegarmes {
+        margin: 5px 20px;
+    }
+    #calendario #btn-pegardatas {
+        margin: 5px 15px;
+    }
+
+    .resultados {
+        width: 690px;
+    }
+
     section#pre-footer {
         margin-top: 30px;
-        max-width: 730px;
     }
 
     #footer {
         width: 70%;
     }
     section.adbaixooumeio {
-        width: 85%;
+        width: 86%;
         max-width: 730px;
-    }
-
-    ul#bloco-meses li a {
-        display: block;
-        width: 250px;
-        height: 70px;
-        font-size: 30pt;
-        color: whitesmoke;
-        background-color: rgb(5, 73, 5);
-        border: 2px solid rgb(7, 46, 7);
-        border-radius: 10px;
-        margin: 10px 4px;
-        padding-top: 5px;
-        text-align: center;
-    }
-    ul#bloco-meses li a:hover {
-        background-color: rgb(2, 46, 2);
-    }
-
-    main section {
-        width: 500px;
     }
 }
 
@@ -690,7 +1000,7 @@ div#busca {
     margin-top: 5px;
     border-radius: 5px;
     float: right;
-    background-image: url(../_img/buscar_icon.png);
+    background-image: url(../img/buscar_icon.png);
     background-repeat: no-repeat;
     background-size: 28px 28px;
     cursor: pointer;
@@ -798,19 +1108,217 @@ div#addireitaquadrado {
 /* -------- Main -------- */
 
 main {
-    width: 1200px;
+    width: 100%;
     height: auto;
     margin: 3px auto;
     display: flex;
     flex-wrap: wrap;
     justify-self: auto;
     justify-content: center;
-    float: none;
 }
 
-main section {
-    width: 730px;
+/* -------- Div Informações do dia -------- */
+#infododia {
+    width: 350px;
+    height: 250px;
+    background-color: rgb(5, 73, 5);
+    border: 1px solid rgb(7, 46, 7);
+    border-radius: 20px;
+    margin: 7px 5px;
 }
+
+#infododia h1 {
+    color: rgb(185, 185, 3);
+    text-align: center;
+    text-shadow: 3px 3px rgb(7, 46, 7);
+}
+#infododia h1 span#nomeDB {
+    font-size: 30pt;
+    font-style: italic;
+    text-shadow: 3px 3px rgb(7, 46, 7);
+}
+#infododia span#datainfododia {
+    color: rgb(185, 185, 3);
+    font-size: 35pt;
+    font-style: normal;
+    text-shadow: 3px 3px 3px black;
+    margin-left: 60px;
+    padding: 2px 10px;
+    background-color: rgb(2, 46, 2);
+    border-radius: 20px;
+}
+#infododia p#infododiap {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin: 4px 8px;
+}
+#infododia a#btn-feriado {
+    color: rgb(185, 185, 3);
+    width: 100px;
+    height: 30px;
+    margin: 1px 36px;
+    padding-top: 5px;
+    text-align: center;
+    display: none;
+    justify-content: space-around;
+    background-color: rgb(7, 46, 7);
+    border: rgb(5, 105, 5);
+    border-radius: 10px;
+}
+#infododia a#btn-comemoracao {
+    color: rgb(185, 185, 3);
+    width: 100px;
+    height: 30px;
+    margin: 1px 36px;
+    padding-top: 5px;
+    text-align: center;
+    display: none;
+    justify-content: space-around;
+    background-color: rgb(7, 46, 7);
+    border: rgb(5, 105, 5);
+    border-radius: 10px;
+}
+#infododia a#btn-estado {
+    color: rgb(185, 185, 3);
+    width: 100px;
+    height: 30px;
+    margin: 1px 36px;
+    padding-top: 5px;
+    text-align: center;
+    display: none;
+    justify-content: space-around;
+    background-color: rgb(7, 46, 7);
+    border: rgb(5, 105, 5);
+    border-radius: 10px;
+}
+
+/* -------- Fim Div Informações do dia -------- */
+
+/* -------- Div do Calendario -------- */
+#calendario {
+    width: 350px;
+    height: 250px;
+    background-color: rgb(5, 73, 5);
+    border: 1px solid rgb(7, 46, 7);
+    border-radius: 20px;
+    margin: 7px 5px;
+}
+#calendario p.titulo {
+    font-size: 19pt;
+    color: rgb(185, 185, 3);
+    text-align: center;
+    text-shadow: 3px 3px rgb(7, 46, 7);
+    margin: 3px auto;
+}
+#calendario #pegardia {
+    width: 80px;
+    height: 45px;
+    font-size: 14pt;
+    margin: 5px 15px;
+    justify-content: space-around;
+    display: inline-block;
+    border-radius: 5px;
+}
+#calendario #pegarmes {
+    width: 80px;
+    height: 45px;
+    font-size: 14pt;
+    margin: 5px 15px;
+    justify-content: space-around;
+    display: inline-block;
+    border-radius: 5px;
+}
+#calendario #btn-pegardatas {
+    width: 80px;
+    height: 45px;
+    font-size: 14pt;
+    margin: 5px 15px;
+    justify-content: space-around;
+    display: inline-block;
+    border-radius: 10px;
+}
+#calendario p#calendariop {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin: 4px 8px;
+}
+
+
+/* -------- Fim Div do Calendario -------- */
+
+/* -------- section cont-resultados -------- */
+section#cont-resultados {
+    width: 100%;
+    height: auto;
+    margin: 1px auto;
+    margin-bottom: 7px;
+    justify-self: auto;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* -------- div da class resultados -------- */
+.resultados {
+    width: 710px;
+    height: auto;
+    background-color: rgb(5, 73, 5);
+    margin: 2px auto;
+    border: 1px solid rgb(7, 46, 7);
+    border-radius: 15px;
+    padding: 6px 0px;
+}
+
+#cont-resultados #hparaferiado {
+    font-size: 19pt;
+    color: rgb(185, 185, 3);
+    text-align: center;
+    text-shadow: 3px 3px rgb(7, 46, 7);
+}
+#cont-resultados #pparaferiado {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin: 6px 8px;
+    margin-bottom: 5px;
+}
+#cont-resultados a#btn-resultadoferiado {
+    color: rgb(185, 185, 3);
+    width: 200px;
+    height: 30px;
+    margin: 3px auto;
+    padding-top: 5px;
+    text-align: center;
+    display: none;
+    background-color: rgb(7, 46, 7);
+    border: rgb(5, 105, 5);
+    border-radius: 10px;
+}
+
+#cont-resultados #hparacomemorativa {
+    font-size: 19pt;
+    color: rgb(185, 185, 3);
+    text-align: center;
+    text-shadow: 3px 3px rgb(7, 46, 7);
+}
+#cont-resultados #pparacomemorativa {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin: 6px 8px;
+}
+#cont-resultados a#btn-resultadocomemorativa {
+    color: rgb(185, 185, 3);
+    width: 200px;
+    height: 30px;
+    margin: 3px auto;
+    padding-top: 5px;
+    text-align: center;
+    display: none;
+    background-color: rgb(7, 46, 7);
+    border: rgb(5, 105, 5);
+    border-radius: 10px;
+}
+
+/* -------- Fim div da class resultados -------- */
 
 /* -------- section pre-footer -------- */
 
