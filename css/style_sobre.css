@@ -29,7 +29,7 @@ ul{
 
     header {
         width: auto;
-        height: 55px;
+        height: 66px;
         background-color: rgb(5, 73, 5);
         display: flex;
         align-content: space-between;
@@ -86,7 +86,7 @@ ul{
 
     #menu-lateral {
         position: absolute;
-        top: 55px;
+        top: 66px;
         left: 0px;
         margin-left: -200px;
         height: auto;
@@ -560,7 +560,7 @@ ul{
 
 header {
     width: auto;
-    height: 55px;
+    height: 66px;
     background-color: rgb(5, 73, 5);
     display: flex;
     align-content: space-between;
@@ -637,7 +637,7 @@ nav#menu label:hover {
 
 #menu-lateral {
     position: absolute;
-    top: 55px;
+    top: 66px;
     left: 0px;
     margin-left: -200px;
     height: auto;
