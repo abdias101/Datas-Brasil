@@ -47,16 +47,50 @@ if (anonovo == "2/01" || "1/01" || "31/12" || "30/12") {
         btn_ID.style.display = 'inline-block'
         btn_ID.style.margin = '1px 36px'
               break
+
+      case '2/01': //Ano Novo
+      infododiap.innerHTML = `Olá <b>${pegardatadodispositivo.getDate()} de ${nomedomes[pegardatadodispositivo.getMonth()]}</b> é `
+      break
 */
 
 
 switch (diaemes) {
   // Adicionar datas de Janeiro
-    case '1/01': //Confraternização Universal (Ano Novo)
-      infododiap.innerHTML = `Olá <b>${pegardatadodispositivo.getDate()} de ${nomedomes[pegardatadodispositivo.getMonth()]}</b> é Confraternização Universal (${anonovo})`
-      btn_feriado.setAttribute("href","../feriados/01-01-anonovo.html")
-      btn_feriado.style.display = 'block'
-      btn_feriado.style.margin = '1px auto'
+    case '1/01': //Ano Novo / Confraternização Universal / Dia Mundial da Paz
+      infododiap.innerHTML = `Olá <b>${pegardatadodispositivo.getDate()} de ${nomedomes[pegardatadodispositivo.getMonth()]}</b> é <a href="../feriados/01-01-anonovo.html"><b>${anonovo}</b></a>, <a href="../comemorativas/m01/01-01-confraternizacaouniversal.html"><b>Confraternização Universal</b></a> e <a href="../comemorativas/m01/01-01-diamundialdapaz.html"><b>Dia Mundial da Paz</b></a>`
+      break
+    case '2/01': //Dia do Sanitarista
+      infododiap.innerHTML = `Olá <b>${pegardatadodispositivo.getDate()} de ${nomedomes[pegardatadodispositivo.getMonth()]}</b> é <a href="../comemorativas/m01/02-01-diadosanitarista.html"><b>Dia do Sanitarista</b></a>`
+      break
+    case '4/01': //Dia da Abreugrafia / Dia do Hemofílico 
+      infododiap.innerHTML = `Olá <b>${pegardatadodispositivo.getDate()} de ${nomedomes[pegardatadodispositivo.getMonth()]}</b> é <a href="../comemorativas/m01/04-01-diadaabreugrafia.html"><b>Dia da Abreugrafia</b></a> e <a href="../comemorativas/m01/04-01-diadohemofilico.html"><b>Dia do Hemofílico</b></a>`
+      break
+    case '5/01': //Dia Nacional da Tipografia 
+      infododiap.innerHTML = `Olá <b>${pegardatadodispositivo.getDate()} de ${nomedomes[pegardatadodispositivo.getMonth()]}</b> é <a href="../comemorativas/m01/05-01-dianacionaldatipografia.html"><b>Dia Nacional da Tipografia</b></a>`
+      break
+    case '6/01': //Dia de Reis / Dia da Gratidão / Dia do Mensageiro 
+      infododiap.innerHTML = `Olá <b>${pegardatadodispositivo.getDate()} de ${nomedomes[pegardatadodispositivo.getMonth()]}</b> é <a href="../comemorativas/m01/06-01-diadereis.html"><b>Dia de Reis</b></a>, <a href="../comemorativas/m01/06-01-diadagratidao.html"><b>Dia da Gratidão</b></a> e <a href="../comemorativas/m01/06-01-diadomensageiro.html"><b>Dia do Mensageiro</b></a>`
+      break
+    case '7/01': //Dia do Leitor / Dia da Liberdade de Culto 
+      infododiap.innerHTML = `Olá <b>${pegardatadodispositivo.getDate()} de ${nomedomes[pegardatadodispositivo.getMonth()]}</b> é <a href="../comemorativas/m01/07-01-diadoleitor.html"><b>Dia do Leitor</b></a> e <a href="../comemorativas/m01/07-01-diadaliberdadedeculto.html"><b>Dia da Liberdade de Culto</b></a>`
+      break
+    case '8/01': //Dia da Fotografia / Dia do Fotógrafo 
+      infododiap.innerHTML = `Olá <b>${pegardatadodispositivo.getDate()} de ${nomedomes[pegardatadodispositivo.getMonth()]}</b> é <a href="../comemorativas/m01/08-01-diadafotografia.html"><b>Dia da Fotografia</b></a> e <a href="../comemorativas/m01/08-01-diadofotografo.html"><b>Dia do Fotógrafo</b></a>`
+      break
+    case '9/01': //Dia do Fico (em 1822) / Dia do Astronauta 
+      infododiap.innerHTML = `Olá <b>${pegardatadodispositivo.getDate()} de ${nomedomes[pegardatadodispositivo.getMonth()]}</b> é <a href="../comemorativas/m01/09-01-diadofico.html"><b>Dia do Fico (em 1822)</b></a> e <a href="../comemorativas/m01/09-01-diadoastronauta.html"><b>Dia do Astronauta</b></a>`
+      break
+    case '10/01': //Dia de São Gonçalo / Dia de Peculiar People Day 
+      infododiap.innerHTML = `Olá <b>${pegardatadodispositivo.getDate()} de ${nomedomes[pegardatadodispositivo.getMonth()]}</b> é <a href="../comemorativas/m01/10-01-diadesaogoncalo.html"><b>Dia de São Gonçalo</b></a> e <a href="../comemorativas/m01/10-01-peculiarpeopleday.html"><b>Dia de Peculiar People Day</b></a>`
+      break
+    case '11/01': //Dia de São Teodósio 
+      infododiap.innerHTML = `Olá <b>${pegardatadodispositivo.getDate()} de ${nomedomes[pegardatadodispositivo.getMonth()]}</b> é <a href="../comemorativas/m01/11-01-saoteodosio.html"><b>Dia de São Teodósio</b></a>`
+      break
+    case '19/01': //Dia Oficial do Cabeleireiro 
+      infododiap.innerHTML = `Olá <b>${pegardatadodispositivo.getDate()} de ${nomedomes[pegardatadodispositivo.getMonth()]}</b> é <a href="../comemorativas/m01/19-01-diaoficialdocabeleireiro.html"><b>Dia Oficial do Cabeleireiro</b></a>`
+      break
+    case '20/01': //Dia do Farmacêutico 
+      infododiap.innerHTML = `Olá <b>${pegardatadodispositivo.getDate()} de ${nomedomes[pegardatadodispositivo.getMonth()]}</b> é <a href="../comemorativas/m01/20-01-diadofarmaceutico.html"><b>Dia do Farmacêutico</b></a>`
       break
   // Fim datas de Janeiro
 

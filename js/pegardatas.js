@@ -46,30 +46,140 @@ if (pegoudia == 0 || pegoumes == 0 ) {
                 
             case 'igual0':
                 calendariop.innerHTML = 'O dia ou o mês não podem estar vazios, ou com valor 0 digite uma data valida.'
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                pparacomemorativa.innerHTML = `<b>O que é uma data comemorativa?</b> Datas comemorativas são datas escolhidas para relembrar eventos históricos, conquistas importantes ou lutas que ainda estão sendo travadas por um grupo. Muitas delas possuem alcance internacional enquanto outras podem ser especificas para um país ou região.`
+                btn_resultadoferiado.style.display = 'none'
+                btn_resultadocomemorativa.style.display = 'none'
                 break;
                 
             case 'maiorq31e12':
                 calendariop.innerHTML = 'O dia deve estar entre 1 e 31 e o mês entre 1 e 12 ou não será valido.'
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                pparacomemorativa.innerHTML = `<b>O que é uma data comemorativa?</b> Datas comemorativas são datas escolhidas para relembrar eventos históricos, conquistas importantes ou lutas que ainda estão sendo travadas por um grupo. Muitas delas possuem alcance internacional enquanto outras podem ser especificas para um país ou região.`
+                btn_resultadoferiado.style.display = 'none'
+                btn_resultadocomemorativa.style.display = 'none'
                 break;
         
             case 'maiorq31':
                 calendariop.innerHTML = 'O dia deve ser selecionado entre 1 e 31 ou não será valido.'
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                pparacomemorativa.innerHTML = `<b>O que é uma data comemorativa?</b> Datas comemorativas são datas escolhidas para relembrar eventos históricos, conquistas importantes ou lutas que ainda estão sendo travadas por um grupo. Muitas delas possuem alcance internacional enquanto outras podem ser especificas para um país ou região.`
+                btn_resultadoferiado.style.display = 'none'
+                btn_resultadocomemorativa.style.display = 'none'
                 break;
                     
             case 'maiorq12':
                 calendariop.innerHTML = 'O mês deve ser selecionado entre 1 e 12 ou não será valido.'
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                pparacomemorativa.innerHTML = `<b>O que é uma data comemorativa?</b> Datas comemorativas são datas escolhidas para relembrar eventos históricos, conquistas importantes ou lutas que ainda estão sendo travadas por um grupo. Muitas delas possuem alcance internacional enquanto outras podem ser especificas para um país ou região.`
+                btn_resultadoferiado.style.display = 'none'
+                btn_resultadocomemorativa.style.display = 'none'
                 break;
                     
             // Mês de Janeiro
 
-            case '1/1':   // (feriado) ano-novo
-                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é Confraternização Universal (Ano Novo) <a href="../feriados/01-01-anonovo.html"><b>Saiba Mais Aqui</b></a> ou no link abaixo.`
-                pparaferiado.innerHTML = `<b>Confraternização Universal (Ano Novo)</b> é o momento em que um novo ano civil começa e um novo calendário é iniciado Em muitas culturas ao redor do mundo, o evento é comemorado principalmente na véspera da data chamada de<b>...</b>`
-                pparacomemorativa.innerHTML = `<b>O que é uma data comemorativa?</b> Datas comemorativas são datas escolhidas para relembrar eventos históricos, conquistas importantes ou lutas que ainda estão sendo travadas por um grupo. Muitas delas possuem alcance internacional enquanto outras podem ser especificas para um país ou região.`
+            case '1/1':   // (feriado) ano-novo + (Comemoração) Confraternização Universal e Dia Mundial da Paz
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link: <a href="../feriados/01-01-anonovo.html"><b>Ano Novo.</b></a> <br><br> Link: <a href="../comemorativas/m01/01-01-confraternizacaouniversal.html"><b>Confraternização Universal.</b></a> <br><br> Link: <a href="../comemorativas/m01/01-01-diamundialdapaz.html"><b>Dia Mundial da Paz.</b></a>`
+                pparaferiado.innerHTML = `<b>Ano Novo</b> é o momento em que um novo ano civil começa e um novo calendário é iniciado em muitas culturas ao redor do mundo, o evento é comemorado principalmente na véspera da data chamada de<b>...</b>`
+                pparacomemorativa.innerHTML = `<b>Confraternização Universal</b> O Dia da Fraternidade Universal ou Dia da Confraternização Universal é um feriado nacional no Brasil, comemorado no dia 1 de janeiro. Foi instituído por lei em 1935, por Getúlio Vargas. <a href="../comemorativas/m01/01-01-confraternizacaouniversal.html"><b>Saber +</b></a><br><br> <b>Dia Mundial da Paz</b> O Dia Mundial da Paz, inicialmente chamado simplesmente de Dia da Paz, é comemorado em 1 de janeiro, tendo sido criado pelo papa Paulo VI em 1967. <a href="../comemorativas/m01/01-01-diamundialdapaz.html"><b>Saber +</b></a>`
                 btn_resultadoferiado.style.display = 'block'
-                btn_resultadoferiado.setAttribute ("href", "../feriados/01-01-anonovo.html")
-
+                btn_resultadoferiado.setAttribute ("href","../feriados/01-01-anonovo.html")
                 btn_resultadocomemorativa.style.display = 'none'
+                break;
+                
+            case '2/1':   // (Comemoração) Dia do Sanitarista
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é:<br><br> Link: <a href="../comemorativas/m01/02-01-diadosanitarista.html"><b>Dia do Sanitarista.</b></a>`
+                pparacomemorativa.innerHTML = `<b>Dia do Sanitarista</b> é comemorado em   2 de janeiro.  Esse profissional analisa a saúde pública, categorizando os problemas em ordem de prioridades, propondo soluções e também<b>...</b>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'block'
+                btn_resultadocomemorativa.setAttribute ("href", "../comemorativas/m01/02-01-diadosanitarista.html")
+
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
+            case '4/1':   // (Comemoração) Dia da Abreugrafia e Dia do Hemofílico
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é:<br><br> Link: <a href="../comemorativas/m01/04-01-diadaabreugrafia.html"><b>Dia da Abreugrafia.</b></a> <br><br> Link: <a href="../comemorativas/m01/04-01-diadohemofilico.html"><b>Dia do Hemofílico.</b></a>`
+                pparacomemorativa.innerHTML = `<b>Dia da Abreugrafia</b> Abreugrafia era um método brasileiro rápido e barato de tirar pequenas chapas radiográficas dos pulmões, para facilitar o diagnóstico da tuberculose, doença mortal. O teste<b>...</b><a href="../comemorativas/m01/04-01-diadaabreugrafia.html"><b>Saber +</b></a> <br><br> <b>Dia do Hemofílico</b> no Brasil ocorre no dia 4 de janeiro. A data tem como objetivo conscientizar a população brasileira sobre essa doença rara. Um corpo frágil pela falta da capacidade de coagular o sangue, necessária para interromper hemorragias<b>...</b> <a href="../comemorativas/m01/04-01-diadohemofilico.html"><b>Saber +</b></a>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'none'
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
+            case '5/1':   // (Comemoração) Dia Nacional da Tipografia
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é:<br><br> Link: <a href="../comemorativas/m01/05-01-dianacionaldatipografia.html"><b>Dia Nacional da Tipografia.</b></a>`
+                pparacomemorativa.innerHTML = `<b>Dia Nacional da Tipografia</b> foi a sucessora da Imprensa Régia, criada por decreto de D. João VI em 13 de maio de 1808, e antecessora da atual Imprensa Nacional. Durante todo o período imperial e parte do período republicano foi subordinada ao Ministério da Fazenda<b>...</b>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'block'
+                btn_resultadocomemorativa.setAttribute ("href", "../comemorativas/m01/05-01-dianacionaldatipografia.html")
+
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
+            case '6/1':   // (Comemoração) Dia de Reis / Dia da Gratidão / Dia do Mensageiro 
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é:<br><br> Link: <a href="../comemorativas/m01/06-01-diadereis.html"><b>Dia de Reis.</b></a> <br><br> Link: <a href="../comemorativas/m01/06-01-diadagratidao.html"><b>Dia da Gratidão.</b></a> <br><br> Link: <a href="../comemorativas/m01/06-01-diadomensageiro.html"><b>Dia do Mensageiro.</b></a>`
+                pparacomemorativa.innerHTML = `<b>Dia de Reis</b> segundo a tradição cristã, seria aquele em que Jesus Cristo recém-nascido recebera a visita de "alguns magos do oriente" (Mateus 2:1) que, segundo o hagiológio, foram<b>...</b><a href="../comemorativas/m01/06-01-diadereis.html"><b>Saber +</b></a> <br><br> <b>Dia da Gratidão</b> Além da data comemorada no Brasil, há também o Dia Mundial da Gratidão, o qual se comemora em 21 de setembro<b>...</b><a href="../comemorativas/m01/06-01-diadagratidao.html"><b>Saber +</b></a> <br><br> <b>Dia do Mensageiro</b> é comemorado em referência à mensagem trazida pelos 3 Reis Magos do Oriente na visita ao Menino Jesus<b>...</b> <a href="../comemorativas/m01/06-01-diadomensageiro.html"><b>Saber +</b></a>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'none'
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
+            case '7/1':   // (Comemoração) Dia do Leitor / Dia da Liberdade de Culto
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="../comemorativas/m01/07-01-diadoleitor.html"><b>Dia do Leitor.</b></a> <br><br> Link <a href="../comemorativas/m01/07-01-diadaliberdadedeculto.html"><b>Dia da Liberdade de Culto.</b></a>`
+                pparacomemorativa.innerHTML = `<b>Dia do Leitor</b> é comemorado em 07 de janeiro, surgiu em 1928, quando o jornal cearense O Povo foi fundado. A fama da publicação era a de combater a corrupção e<b>...</b> <a href="../comemorativas/m01/07-01-diadoleitor.html"><b>Saber +</b></a> <br><br> <b>Dia da Liberdade de Culto</b> é celebrado em 7 de janeiro, serve para lembrar que todos os brasileiros podem exercer suas crenças de modo livre, sem sofrer perseguições e<b>...</b> <a href="../comemorativas/m01/07-01-diadaliberdadedeculto.html"><b>Saber +</b></a>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'none'
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
+            case '8/1':   // (Comemoração) Dia da Fotografia / Dia do Fotógrafo 
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="../comemorativas/m01/08-01-diadafotografia.html"><b>Dia da Fotografia.</b></a> <br><br> Link <a href="../comemorativas/m01/08-01-diadofotografo.html"><b>Dia do Fotógrafo.</b></a>`
+                pparacomemorativa.innerHTML = `<b>Dia da Fotografia</b> no Brasil a data é celebrada no dia 8 de janeiro, que seria o dia da chegada do Daguerreótipo ao país, em 1840. Trazido por Louis Compte<b>...</b> <a href="../comemorativas/m01/08-01-diadafotografia.html"><b>Saber +</b></a> <br><br> <b>Dia do Fotógrafo</b> a atividade registra momentos corriqueiros ou históricos por meio da habilidade de capturar imagens a partir da arte de combinar luz, ângulo, profundidade<b>...</b> <a href="../comemorativas/m01/08-01-diadofotografo.html"><b>Saber +</b></a>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'none'
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
+            case '9/1':   // (Comemoração) Dia do Fico (em 1822) / Dia do Astronauta 
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="../comemorativas/m01/09-01-diadofico.html"><b>Dia do Fico.</b></a> <br><br> Link <a href="../comemorativas/m01/09-01-diadoastronauta.html"><b>Dia do Astronauta.</b></a>`
+                pparacomemorativa.innerHTML = `<b>Dia do Fico</b> refere-se, na história do Brasil, ao dia 9 de janeiro de 1822. Neste dia, o então príncipe regente D. Pedro I declarou que não cumpriria as<b>...</b> <a href="../comemorativas/m01/09-01-diadofico.html"><b>Saber +</b></a> <br><br> <b>Dia do Astronauta</b> é em homenagem àqueles que se aventuram e se arriscam ao ultrapassar as barreiras da atmosfera da Terra<b>...</b> <a href="../comemorativas/m01/09-01-diadoastronauta.html"><b>Saber +</b></a>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'none'
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
+            case '10/1':   // (Comemoração) Dia de São Gonçalo / Dia de Peculiar People Day 
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="../comemorativas/m01/10-01-diadesaogoncalo.html"><b>Dia de São Gonçalo.</b></a> <br><br> Link <a href="../comemorativas/m01/10-01-peculiarpeopleday.html"><b>Peculiar People Day.</b></a>`
+                pparacomemorativa.innerHTML = `<b>São Gonçalo</b> foi um eclesiástico português. Gozando de grande devoção popular que se irradiou a partir do norte do país, é popularmente conhecido como São Gonçalo de Amarante. Na realidade, é<b>...</b> <a href="../comemorativas/m01/10-01-diadesaogoncalo.html"><b>Saber +</b></a> <br><br> <b>Dia de Peculiar People Day</b> é um dia para celebrar as diferenças e praticar a tolerância. É um dia para julgar menos e agregar mais. Um dia pra gente conhecer pessoas que vivem, pensam e são diferentes<b>...</b> <a href="../comemorativas/m01/10-01-peculiarpeopleday.html"><b>Saber +</b></a>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'none'
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
+            case '11/1':   // (Comemoração) Dia de São Teodósio
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="../comemorativas/m01/11-01-saoteodosio.html"><b>Dia de São Teodósio.</b></a>`
+                pparacomemorativa.innerHTML = `<b>São Teodósio</b> cujo nome significa "um presente de Deus", nasceu na Capadócia, atual Turquia, em 423, de pais ricos, nobres cristãos. Recebeu uma boa e sólida formação desde a infância<b>...</b>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'block'
+                btn_resultadocomemorativa.setAttribute ("href", "../comemorativas/m01/11-01-saoteodosio.html")
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
+            case '19/1':   // (Comemoração) Dia Oficial do Cabeleireiro
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="../comemorativas/m01/19-01-diaoficialdocabeleireiro.html"><b>Dia Oficial do Cabeleireiro.</b></a> `
+                pparacomemorativa.innerHTML = `<b>Dia Oficial do Cabeleireiro</b> é comemorado oficialmente no dia 19 de janeiro, Este profissional exerce atividades ligadas ao embelezamento e higienização capilar<b>...</b>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'block'
+                btn_resultadocomemorativa.setAttribute ("href", "../comemorativas/m01/19-01-diaoficialdocabeleireiro.html")
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
+            case '20/1':   // (Comemoração) Dia do Farmacêutico
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="../comemorativas/m01/20-01-diadofarmaceutico.html"><b>Dia do Farmacêutico.</b></a>`
+                pparacomemorativa.innerHTML = `<b>Dia do Farmacêutico</b> a data foi escolhida em função da fundação da Associação Brasileira de Farmacêuticos (ABF), em 20 de janeiro de 1916. Na época, era a maior instituição representativa da<b>...</b>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'block'
+                btn_resultadocomemorativa.setAttribute ("href", "../comemorativas/m01/20-01-diadofarmaceutico.html")
+                btn_resultadoferiado.style.display = 'none'
                 break;
                 
             // Fim do Mês de Janeiro

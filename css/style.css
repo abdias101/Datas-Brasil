@@ -393,6 +393,10 @@ ul{
         flex-wrap: wrap;
     }
 
+    section#cont-resultados a {
+        color: rgb(185, 185, 3);
+    }
+
     /* -------- div da class resultados -------- */
     .resultados {
         width: 240px;
