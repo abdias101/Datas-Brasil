@@ -184,8 +184,26 @@ if (pegoudia == 0 || pegoumes == 0 ) {
                 
             // Fim do Mês de Janeiro
             // Mês de Fevereiro
+            case '1/2':   // (Comemoração) Dia do Publicitário
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="../comemorativas/m02/01-02-diadopublicitario.html"><b>Dia do Publicitário</b></a>`
+                pparacomemorativa.innerHTML = `<b>Dia do Publicitário</b> é comemorado no Brasil em 1º de fevereiro, de acordo com o Decreto de Lei nº 57.690, de 1º de fevereiro de 1966<b>...</b>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'block'
+                btn_resultadocomemorativa.setAttribute ("href", "../comemorativas/m02/01-02-diadopublicitario.html")
+
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
+            case '2/2':   // (Comemoração) Apresentação de Cristo / Nossa Senhora dos Navegantes
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="../comemorativas/m02/02-02-apresentacaodejesus.html"><b>Apresentação de Cristo.</b></a> <br><br> Link <a href="../comemorativas/m02/02-02-nossasenhoradosnavegantes.html"><b>Dia de Nossa Sr. dos Navegantes.</b></a>`
+                pparacomemorativa.innerHTML = `<b>Apresentação de Cristo</b> foi o dia da Festa de Apresentação do Menino Jesus no templo é comemorado no dia 2 de fevereiro, em homenagem ao dia em que Maria, José e Jesus entraram a<b>...</b> <a href="../comemorativas/m02/02-02-apresentacaodejesus.html"><b>Saber +</b></a> <br><br> <b>Dia de Nossa Senhora dos Navegantes</b> é um título dado a Mãe de Jesus, Maria<b>...</b> <a href="../comemorativas/m02/02-02-nossasenhoradosnavegantes.html"><b>Saber +</b></a>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'none'
+                btn_resultadoferiado.style.display = 'none'
+                break;
+
             case '16/2':   // (Comemoração) carnaval
-                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é Carnaval <a href="../comemorativas/m02/16-02-carnaval.html"><b>Saiba Mais Aqui</b></a> ou no link abaixo.`
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="../comemorativas/m02/16-02-carnaval.html"><b>Carnaval.</b></a>`
                 pparacomemorativa.innerHTML = `<b>Carnaval</b> é um festival do cristianismo ocidental que ocorre antes da estação litúrgica da Quaresma. Os principais eventos ocorrem tipicamente durante fevereiro ou início de março, durante o período historicamente conhecido como<b>...</b>`
                 pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
                 btn_resultadocomemorativa.style.display = 'block'
@@ -194,9 +212,78 @@ if (pegoudia == 0 || pegoumes == 0 ) {
                 btn_resultadoferiado.style.display = 'none'
                 break;
                 
+            case '24/2':   // (Comemoração) Promulgação da primeira Constituição da República do Brasil (1891)
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="../comemorativas/m02/24-02-constituicaobrasileira1891.html"><b>Promulgação da Constituição.</b></a>`
+                pparacomemorativa.innerHTML = `<b>A Constituição da República dos Estados Unidos do Brasil de 1891</b> foi a segunda constituição do Brasil e primeira no sistema republicano de governo, marcando a transição da monarquia para a república<b>...</b>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'block'
+                btn_resultadocomemorativa.setAttribute ("href", "../comemorativas/m02/24-02-constituicaobrasileira1891.html")
+
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
             // Fim do Mês de Fevereiro
             // Mês de Março
+            case '8/3':   // (Comemoração) Dia Internacional da Mulher
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="../comemorativas/m03/08-03-diainternacionaldamulher.html"><b>Dia Internacional da Mulher.</b></a>`
+                pparacomemorativa.innerHTML = `<b>Dia Internacional da Mulher</b> a ideia de uma celebração anual surgiu depois que o Partido Socialista da América organizou um Dia da Mulher, em 20 de fevereiro de 1909, em Nova York — uma jornada de manifestação pela igualdade de direitos civis e<b>...</b>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'block'
+                btn_resultadocomemorativa.setAttribute ("href", "../comemorativas/m03/08-03-diainternacionaldamulher.html")
 
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
+            case '12/3':   // (Comemoração) Dia do Bibliotecário
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="../comemorativas/m03/12-03-diadobibliotecario.html"><b>Dia do Bibliotecário.</b></a>`
+                pparacomemorativa.innerHTML = `<b>Dia do Bibliotecário</b> foi instituído pelo Decreto nº 84.631, de 9 de abril de 1980, a ser comemorado em todo o território nacional a 12 de março, data do nascimento do bibliotecário<b>...</b>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'block'
+                btn_resultadocomemorativa.setAttribute ("href", "../comemorativas/m03/12-03-diadobibliotecario.html")
+
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
+            case '14/3':   // (Comemoração) Dia dos Carecas
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="../comemorativas/m03/14-03-diadoscarecas.html"><b>Dia dos Carecas.</b></a>`
+                pparacomemorativa.innerHTML = `<b>Dia dos Carecas</b> é comemorado em 14 de março no Brasil. A data celebra aqueles que possuem calvície, uma forma gradual e progressiva onde as pessoas perdem os cabelos, e é mais comum nos homens<b>...</b>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'block'
+                btn_resultadocomemorativa.setAttribute ("href", "../comemorativas/m03/14-03-diadoscarecas.html")
+
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
+            case '15/3':   // (Comemoração) Dia do Consumidor
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="../comemorativas/m03/15-03-diadoconsumidor.html"><b>Dia do Consumidor.</b></a>`
+                pparacomemorativa.innerHTML = `<b>O Dia Mundial dos Direitos do Consumidor</b> foi comemorado, pela primeira vez, em 15 de março de 1983. Essa data foi escolhida em razão do famoso discurso feito, em 15 de março de 1962, pelo então presidente dos EUA, John Kennedy. Em seu discurso<b>...</b>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'block'
+                btn_resultadocomemorativa.setAttribute ("href", "../comemorativas/m03/15-03-diadoconsumidor.html")
+
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
+            case '17/3':   // (Comemoração) Dia de São Patrício
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="../comemorativas/m03/17-03-diadesaopatricio.html"><b>Dia de São Patrício.</b></a>`
+                pparacomemorativa.innerHTML = `<b>Dia de São Patrício</b> é uma festa anual realizada desde 1997, comemorada em 17 de Março (nos países anglofônicos), celebrando a morte de São Patrício, padroeiro da Irlanda. Quando as pessoas<b>...</b>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'block'
+                btn_resultadocomemorativa.setAttribute ("href", "../comemorativas/m03/17-03-diadesaopatricio.html")
+
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
+            case '27/3':   // (Comemoração) Dia Mundial do Teatro
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="../comemorativas/m03/27-03-diamundialdoteatro.html"><b>Dia Mundial do Teatro.</b></a>`
+                pparacomemorativa.innerHTML = `<b>Dia Mundial do Teatro</b> é celebrado no dia 27 de março. Foi criado pelo Instituto Internacional do Teatro em 1961. A primeira mensagem internacional do Dia Mundial do Teatro foi<b>...</b>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'block'
+                btn_resultadocomemorativa.setAttribute ("href", "../comemorativas/m03/27-03-diamundialdoteatro.html")
+
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
             // Fim do Mês de Março
             // Mês de Abril
             case '2/4':   // (feriado) Paixão de Cristo
