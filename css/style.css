@@ -116,7 +116,7 @@ ul{
 
     div#busca {
         width: auto;
-        height: 50px;
+        height: auto;
         float: right;
     }
     #buscar {
@@ -1120,7 +1120,8 @@ main {
 /* -------- Div Informações do dia -------- */
 #infododia {
     width: 350px;
-    height: 250px;
+    min-height: 250px;
+    height: auto;
     background-color: rgb(5, 73, 5);
     border: 1px solid rgb(7, 46, 7);
     border-radius: 20px;
@@ -1197,7 +1198,8 @@ main {
 /* -------- Div do Calendario -------- */
 #calendario {
     width: 350px;
-    height: 250px;
+    min-height: 250px;
+    height: auto;
     background-color: rgb(5, 73, 5);
     border: 1px solid rgb(7, 46, 7);
     border-radius: 20px;
