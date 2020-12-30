@@ -286,36 +286,137 @@ if (pegoudia == 0 || pegoumes == 0 ) {
                 
             // Fim do Mês de Março
             // Mês de Abril
-            case '2/4':   // (feriado) Paixão de Cristo
-                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é Sexta-feira Santa (Paixão de Cristo) <a href="../feriados/02-04-PaixaodeCristo.html"><b>Saiba Mais Aqui</b></a> ou no link abaixo.`
+            case '1/4':   // (Comemoração) Dia da Mentira / Dia da Abolição da Escravidão dos Índios - 1680
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="comemorativas/m04/01-04-diadamentira.html"><b>Dia da Mentira.</b></a> <br><br> Link <a href="comemorativas/m04/01-04-abolicaoescravidaodosindios.html"><b>Abolição da Escravidão dos Índios.</b></a>`
+                pparacomemorativa.innerHTML = `<b>Dia da Mentira</b> também conhecido como Dia das Mentiras, dia das petas, dia dos tolos (de abril), dia da gafe, ou dia dos bobos, é uma celebração anual em alguns países europeus e ocidentais, comemorada em<b>...</b> <a href="comemorativas/m04/01-04-diadamentira.html"><b>Saber +</b></a> <br><br> <b>Abolição da Escravidão dos Índios - 1680.</b> Vítimas de trabalho forçado, violência e perda de liberdade, os negros não foram os únicos escravizados na época da colonização do Brasil. Os indígenas também sofreram com a escravidão<b>...</b> <a href="comemorativas/m04/01-04-abolicaoescravidaodosindios.html"><b>Saber +</b></a>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'none'
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
+            case '2/4':   // (feriado) Paixão de Cristo / (Comemoração) Dia Mundial de Conscientização do Autismo / Dia do Propagandista / Dia Internacional do Livro Infantil 
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="feriados/02-04-PaixaodeCristo.html"><b>Sexta-feira Santa (Paixão de Cristo).</b></a> <br><br> Link <a href="comemorativas/m04/02-04-conscientizacaodoautismo.html"><b>Dia Mundial de Conscientização do Autismo.</b></a> <br><br> Link <a href="comemorativas/m04/02-04-diadopropagandista.html"><b>Dia do Propagandista.</b></a> <br><br> Link <a href="comemorativas/m04/02-04-diainternacionallivroinfantil.html"><b>Dia Internacional do Livro Infantil.</b></a>`
                 pparaferiado.innerHTML = `<b>Sexta-feira Santa (Paixão de Cristo)</b> Sexta-feira Santa ou Sexta-Feira da Paixão é uma data religiosa cristã que relembra a crucificação de Jesus Cristo e sua morte no Calvário. O feriado é observado sempre na sexta-feira que antecede o Domingo de Páscoa, o sexto dia da Semana Santa no<b>...</b>`
-                pparacomemorativa.innerHTML = `<b>O que é uma data comemorativa?</b> Datas comemorativas são datas escolhidas para relembrar eventos históricos, conquistas importantes ou lutas que ainda estão sendo travadas por um grupo. Muitas delas possuem alcance internacional enquanto outras podem ser especificas para um país ou região.`
+                pparacomemorativa.innerHTML = `<b>Dia Mundial de Conscientização do Autismo</b> celebrado anualmente em 2 de abril, foi criado pela Organização das Nações Unidas em 18 de dezembro de 2007 para a conscientização acerca dessa questão. No primeiro evento, em 2 de abril de<b>...</b> <a href="comemorativas/m04/02-04-conscientizacaodoautismo.html"><b>Saber +</b></a> <br><br> <b>Dia do Propagandista</b> é comemorado em abril, mas diferença entre a profissão e a de Publicitário ainda não é clara no dia 2 de abril comemora-se o dia do Propagandista<b>...</b> <a href="comemorativas/m04/02-04-diadopropagandista.html"><b>Saber +</b></a> <br><br> <b>Dia Internacional do Livro Infantil</b> é um evento internacional comemorado no dia 2 de abril, em função da data em que nasceu o escritor dinamarquês Hans Christian Andersen, em 1805<b>...</b> <a href="comemorativas/m04/02-04-diainternacionallivroinfantil.html"><b>Saber +</b></a>`
                 btn_resultadoferiado.style.display = 'block'
-                btn_resultadoferiado.setAttribute ("href", "../feriados/02-04-PaixaodeCristo.html")
-
+                btn_resultadoferiado.setAttribute ("href", "feriados/02-04-PaixaodeCristo.html")
                 btn_resultadocomemorativa.style.display = 'none'
                 break;
                 
-            case '4/4':   // (feriado) Páscoa
-                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é Domingo de Páscoa <a href="../feriados/04-04-pascoa.html"><b>Saiba Mais Aqui</b></a> ou no link abaixo.`
+            case '4/4':   // (feriado) Páscoa (Comemoração) Dia Nacional do Parkinsoniano
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="feriados/04-04-pascoa.html"><b>Domingo de Páscoa.</b></a> <br><br> Link <a href="comemorativas/m04/04-04-parkisoniano.html"><b>Dia Nacional do Parkinsoniano.</b></a>`
                 pparaferiado.innerHTML = `<b>Páscoa ou Domingo da Ressurreição</b> é uma festividade religiosa e um feriado que celebra a ressurreição de Jesus ocorrida ao terceiro dia após sua crucificação no Calvário, conforme o relato do Novo Testamento. É a principal celebração do<b>...</b>`
-                pparacomemorativa.innerHTML = `<b>O que é uma data comemorativa?</b> Datas comemorativas são datas escolhidas para relembrar eventos históricos, conquistas importantes ou lutas que ainda estão sendo travadas por um grupo. Muitas delas possuem alcance internacional enquanto outras podem ser especificas para um país ou região.`
+                pparacomemorativa.innerHTML = `<b>Dia Nacional do Parkinsoniano</b> A Doença de Parkinson é uma doença degenerativa do sistema nervoso central, crônica e progressiva. É causada por uma diminuição intensa da produção de dopamina, que é um<b>...</b>`
                 btn_resultadoferiado.style.display = 'block'
-                btn_resultadoferiado.setAttribute ("href", "../feriados/04-04-pascoa.html")
-
-                btn_resultadocomemorativa.style.display = 'none'
+                btn_resultadoferiado.setAttribute ("href", "feriados/04-04-pascoa.html")
+                btn_resultadocomemorativa.style.display = 'block'
+                btn_resultadocomemorativa.setAttribute ("href", "comemorativas/m04/04-04-parkisoniano.html")
                 break;
 
-            case '21/4':   // (feriado) Tiradentes
-                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é Dia de Tiradentes <a href="../feriados/21-04-tiradentes.html"><b>Saiba Mais Aqui</b></a> ou no link abaixo.`
+            case '7/4':   // (Comemoração) Dia do Corretor / Dia do Jornalista / Dia Mundial da Saúde / Dia do Médico Legista 
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="comemorativas/m04/07-04-diadocorretor.html"><b>Dia do Corretor.</b></a> <br><br> Link <a href="comemorativas/m04/07-04-diadojornalista.html"><b>Dia do Jornalista.</b></a> <br><br> Link <a href="comemorativas/m04/07-04-diamundialdasaude.html"><b>Dia Mundial da Saúde.</b></a> <br><br> Link <a href="comemorativas/m04/07-04-diadomedicolegista.html"><b>Dia do Médico Legista.</b></a>`
+                pparacomemorativa.innerHTML = `<b>Dia do Corretor</b> esta data homenageia o profissional que se dedica em ajudar as pessoas durante os processos de aquisições e negociações de determinados bens e serviços<b>...</b> <a href="comemorativas/m04/07-04-diadocorretor.html"><b>Saber +</b></a> <br><br> <b>Dia do Jornalista.</b> O dia do jornalista foi criado no dia 7 de abril de 1931, pela Associação Brasileira de Imprensa (ABI). A data foi estabelecida por alguns motivos<b>...</b> <a href="comemorativas/m04/07-04-diadojornalista.html"><b>Saber +</b></a> <br><br> <b>Dia Mundial da Saúde</b> é uma data, criada em 1948 pela Organização Mundial da Saúde, que tem como objetivo conscientizar a população a respeito da qualidade de vida e dos diferentes fatores que afetam a<b>...</b> <a href="comemorativas/m04/07-04-diamundialdasaude.html"><b>Saber +</b></a> <br><br> <b>Dia do Médico Legista</b> a data foi escolhida para homenagear estes médicos porque em 1886 o conselheiro João Alfredo Corrêa de Oliveira, então presidente da Província de São Paulo, assinou a lei<b>...</b> <a href="comemorativas/m04/07-04-diadomedicolegista.html"><b>Saber +</b></a>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'none'
+                btn_resultadoferiado.style.display = 'none'
+                break;
+
+            case '8/4':   // (Comemoração) Dia Mundial de Combate ao Câncer / Dia Mundial da Astronomia / Dia Nacional do Sistema Braile 
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="comemorativas/m04/08-04-diamundialdecombateaocancer.html"><b>Dia Mundial de Combate ao Câncer.</b></a> <br><br> Link <a href="comemorativas/m04/08-04-diamundialdaastronomia.html"><b>Dia Mundial da Astronomia.</b></a> <br><br> Link <a href="comemorativas/m04/08-04-dianacionaldosistemabraile.html"><b>Dia Nacional do Sistema Braile.</b></a>`
+                pparacomemorativa.innerHTML = `<b>Dia Mundial de Combate ao Câncer</b> foi criado pela União Internacional de Controle do Câncer (UICC) para marcar o combate à doença, que a cada ano atinge milhares de pessoas. No Brasil, apenas em 2016, foram estimados mais de<b>...</b> <a href="comemorativas/m04/08-04-diamundialdecombateaocancer.html"><b>Saber +</b></a> <br><br> <b>Dia Mundial da Astronomia.</b> No dia 8 de abril comemora-se, no Brasil, o Dia Mundial da Astronomia. Embora não seja uma data oficialmente reconhecida pela ONU - por isso, não recebe o título de<b>...</b> <a href="comemorativas/m04/08-04-diamundialdaastronomia.html"><b>Saber +</b></a> <br><br> <b>Dia Nacional do Sistema Braile.</b> A data foi escolhida em homenagem ao nascimento de José Álvares de Azevedo, primeiro professor cego do Brasil, e tem o objetivo de conscientizar a população sobre ações que<b>...</b> <a href="comemorativas/m04/08-04-dianacionaldosistemabraile.html"><b>Saber +</b></a>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'none'
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
+            case '15/4':   // (Comemoração) Dia do Desarmamento Infantil / Dia Internacional do Ciclista
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="comemorativas/m04/15-04-desarmamentoinfantil.html"><b>Dia do Desarmamento Infantil.</b></a> <br><br> Link <a href="comemorativas/m04/15-04-diainternacionaldociclista.html"><b>Dia Internacional do Ciclista.</b></a>`
+                pparacomemorativa.innerHTML = `<b>Dia do Desarmamento Infantil.</b> Para tentar conscientizar a população acerca do tema, Nessa data, lembramos que uma criança nunca deve utilizar e nem brincar com armas de fogo (mesmo sendo de brinquedo)<b>...</b> <a href="comemorativas/m04/15-04-desarmamentoinfantil.html"><b>Saber +</b></a> <br><br> <b>Dia Internacional do Ciclista.</b> A data não é única: a Confederação Brasileira de Ciclismo (CBC) instituiu o dia 8 de dezembro como a data oficial do Ciclista, pois é o dia da padroeira dos ciclistas, Madonna Del Ghisallo<b>...</b> <a href="comemorativas/m04/15-04-diainternacionaldociclista.html"><b>Saber +</b></a>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'none'
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
+            case '18/4':   // (Comemoração) Dia Nacional do Livro Infantil 
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="comemorativas/m04/18-04-nacionaldolivroinfantil.html"><b>Dia Nacional do Livro Infantil.</b></a>`
+                pparacomemorativa.innerHTML = `<b>Dia Nacional do Livro Infantil</b> é a data escolhida para celebrar a literatura infantil nacional. Isso porque, nesse dia, em 1882, nascia o escritor Monteiro Lobato, considerado o pai da literatura infantil brasileira<b>...</b>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'block'
+                btn_resultadocomemorativa.setAttribute ("href", "comemorativas/m04/18-04-nacionaldolivroinfantil.html")
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
+            case '19/4':   // (Comemoração) Dia do Índio
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="comemorativas/m04/19-04-diadoindio.html"><b>Dia do Índio.</b></a>`
+                pparacomemorativa.innerHTML = `<b>Dia do Índio.</b> Todo dia 19 de abril comemora-se no Brasil e em vários outros países do continente americano o Dia do Índio ou o Dia dos Povos Indígenas<b>...</b>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'block'
+                btn_resultadocomemorativa.setAttribute ("href", "comemorativas/m04/19-04-diadoindio.html")
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
+            case '21/4':   // (feriado) Tiradentes (Comemoração) Inauguração de Brasília (1960) 
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="feriados/21-04-tiradentes.html"><b>Dia de Tiradentes.</b></a> <br><br> Link <a href="comemorativas/m04/21-04-inauguracaodebrasilia.html"><b>Inauguração de Brasília (1960).</b></a>`
                 pparaferiado.innerHTML = `<b>Joaquim José da Silva Xavier, o Tiradentes</b> foi um dentista, tropeiro, minerador, comerciante, militar e ativista político que atuou no Brasil, mais especificamente nas capitanias de Minas Gerais e Rio de Janeiro. Personagem símbolo da conspiração denominada Inconfidência Mineira, é patrono cívico do Brasil, além de<b>...</b>`
-                pparacomemorativa.innerHTML = `<b>O que é uma data comemorativa?</b> Datas comemorativas são datas escolhidas para relembrar eventos históricos, conquistas importantes ou lutas que ainda estão sendo travadas por um grupo. Muitas delas possuem alcance internacional enquanto outras podem ser especificas para um país ou região.`
+                pparacomemorativa.innerHTML = `<b>Inauguração de Brasília (1960)</b> A data não fora escolhida ao acaso: o novo centro de decisões da República viria ao mundo oficialmente no Dia de Tiradentes, símbolo da luta pela independência e pelos valores republicanos no Brasil<b>...</b>`
                 btn_resultadoferiado.style.display = 'block'
-                btn_resultadoferiado.setAttribute ("href", "../feriados/21-04-tiradentes.html")
-
-                btn_resultadocomemorativa.style.display = 'none'
+                btn_resultadoferiado.setAttribute ("href", "feriados/21-04-tiradentes.html")
+                btn_resultadocomemorativa.style.display = 'block'
+                btn_resultadocomemorativa.setAttribute ("href", "comemorativas/m04/21-04-inauguracaodebrasilia.html")
                 break;
 
+            case '22/4':   // (Comemoração) Dia do Descobrimento do Brasil (1500)
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="comemorativas/m04/22-04-descobrimentodobrasil.html"><b>Dia do Descobrimento do Brasil.</b></a>`
+                pparacomemorativa.innerHTML = `<b>Dia do Descobrimento do Brasil (1500)</b> Descoberta ou descobrimento do Brasil refere-se, de um ponto de vista eurocêntrico, à descoberta por europeus do território atualmente conhecido como Brasil. Este momento é muitas vezes entendido como sendo o do avistamento da<b>...</b>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'block'
+                btn_resultadocomemorativa.setAttribute ("href", "comemorativas/m04/22-04-descobrimentodobrasil.html")
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
+            case '23/4':   // (Comemoração) Dia de São Jorge / Dia Mundial do Livro
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="comemorativas/m04/23-04-diadesaojorge.html"><b>Dia de São Jorge.</b></a> <br><br> Link <a href="comemorativas/m04/23-04-diamundialdolivro.html"><b>Dia Mundial do Livro.</b></a>`
+                pparacomemorativa.innerHTML = `<b>Dia de São Jorge</b> é celebrado por várias nações para quem São Jorge é o santo patrono. Entre os países que comemoram a data, destacam-se o Reino Unido, Portugal, Geórgia, Bulgária e pelos Goranis<b>...</b> <a href="comemorativas/m04/23-04-diadesaojorge.html"><b>Saiba +</b></a> <br><br> <b>Dia Mundial do Livro</b> é um evento comemorado todos os anos no dia 23 de Abril, e organizado pela UNESCO para promover a o prazer da leitura, a publicação de livros e a protecção dos<b>...</b> <a href="comemorativas/m04/23-04-diamundialdolivro.html"><b>Saiba +</b></a>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'none'
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
+            case '24/4':   // (Comemoração) Dia de Libras (Língua Brasileira de Sinais)
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="comemorativas/m04/24-04-dianacionaldelibras.html"><b>Dia de Libras (Língua Brasileira de Sinais).</b></a>`
+                pparacomemorativa.innerHTML = `<b>Dia de Libras (Língua Brasileira de Sinais)</b> é celebrado no dia 24 de abril. Faz sentido que esse idioma tão importante, também chamado de Libras, tenha ganhado uma data<b>...</b>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'block'
+                btn_resultadocomemorativa.setAttribute ("href", "comemorativas/m04/24-04-dianacionaldelibras.html")
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
+            case '28/4':   // (Comemoração) Dia da Educação / Dia da Sogra 
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="comemorativas/m04/28-04-diadaeducacao.html"><b>Dia da Educação.</b></a> <br><br> Link <a href="comemorativas/m04/28-04-diadasogra.html"><b>Dia da Sogra.</b></a>`
+                pparacomemorativa.innerHTML = `<b>Dia da Educação.</b> O Dia Mundial da Educação foi instituído por líderes de 164 países – incluindo o Brasil – e simboliza o compromisso dessas nações com o desenvolvimento da educação até<b>...</b> <a href="comemorativas/m04/28-04-diadaeducacao.html"><b>Saiba +</b></a> <br><br> <b>Dia da Sogra.</b> Esta data celebra a existência da mãe do cônjuge de uma pessoa (marido ou esposa), além de ser uma presença muito importante para os filhos, pois é nada mais, nada menos que<b>...</b> <a href="comemorativas/m04/28-04-diadasogra.html"><b>Saiba +</b></a>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'none'
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
+            case '29/4':   // (Comemoração) Dia Internacional da Dança 
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="comemorativas/m04/29-04-diainternacionaldadanca.html"><b>Dia Internacional da Dança.</b></a>`
+                pparacomemorativa.innerHTML = `<b>Dia Internacional da Dança</b> foi instituído pelo CID (Comitê Internacional da Dança) da UNESCO (Organização das Nações Unidas para a Educação, Ciência e Cultura) no ano de 1982 e<b>...</b>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'block'
+                btn_resultadocomemorativa.setAttribute ("href", "comemorativas/m04/29-04-diainternacionaldadanca.html")
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
+            case '30/4':   // (Comemoração) Dia Nacional da Mulher 
+                calendariop.innerHTML = `Olá <b>${pegoudia} de ${nomedosmeses[pegoumes]}</b> é: <br><br> Link <a href="comemorativas/m04/30-04-dianacionaldamulher.html"><b>Dia Nacional da Mulher.</b></a>`
+                pparacomemorativa.innerHTML = `<b>Dia Nacional da Mulher.</b> A data do Dia Nacional da Mulher foi escolhida por ser o dia do nascimento de Jerônima Mesquita e a lei que instituiu a data no Brasil foi a 6.971/1980 e<b>...</b>`
+                pparaferiado.innerHTML = `<b>O que é um feriado?</b> Feriado é uma data em que determinada ocasião é comemorada por uma nação, comunidade, religião, grupo étnico ou classe trabalhista. Os governos podem instituir feriados em nível federal, estadual, distrital ou ainda municipal, dependendo da extensão da importância comemorada.`
+                btn_resultadocomemorativa.style.display = 'block'
+                btn_resultadocomemorativa.setAttribute ("href", "comemorativas/m04/30-04-dianacionaldamulher.html")
+                btn_resultadoferiado.style.display = 'none'
+                break;
+                
             // Fim Mês de Abril
             // Mês de Maio
             case '1/5':   // (feriado) Dia do Trabalho
