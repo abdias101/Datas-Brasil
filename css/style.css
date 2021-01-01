@@ -275,6 +275,10 @@ ul{
         text-align: justify;
         margin: 4px 8px;
     }
+
+    #infododia p#infododiap a {
+        color: rgb(185, 185, 3);
+    }
     #infododia a#btn-feriado {
         color: rgb(185, 185, 3);
         width: 100px;
